@@ -1,14 +1,14 @@
-// For use with Cloudflare Workers. This is necessary for a “Pages”-like static
+// For use with Cloudflare Workers. This is necessary for a "Pages"-like static
 // website.
 //
-// You MUST change “name” to your Cloudflare Workers project name.
-//     should change “compatibility_date” to the date last deployed.
+// You MUST change "name" to your Cloudflare Workers project name.
+//     should change "compatibility_date" to the date last deployed.
 {
-  “$schema”: “node_modules/wrangler/config-schema.json”,
-  “name”: “shutterpaws-pics”,
-  “compatibility_date”: “2025-12-04”,
-  “preview_urls”: false,
-  “assets”: {
-    “directory”: “./docs”
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "shutterpaws-pics",
+  "compatibility_date": "2025-12-04",
+  "preview_urls": false,
+  "assets": {
+    "directory": "./docs"
   }
 }
