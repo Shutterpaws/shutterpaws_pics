@@ -1,8 +1,3 @@
-// For use with Cloudflare Workers. This is necessary for a "Pages"-like static
-// website.
-//
-// You MUST change "name" to your Cloudflare Workers project name.
-//     should change "compatibility_date" to the date last deployed.
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "shutterpaws-pics",
