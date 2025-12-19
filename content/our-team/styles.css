@@ -1,0 +1,293 @@
+@font-face {
+  font-family: "Avenir";
+  src: url("../fonts/AvenirNextLTPro-Regular.otf"); /*URL to font*/
+}
+
+@font-face {
+  font-family: "AvenirBold";
+  src: url("../fonts/AvenirNextLTPro-Bold.otf"); /*URL to font*/
+}
+
+body {
+  font-family: Avenir, sans-serif;
+  margin: 0em;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: AvenirBold, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  column-gap: 0.5em;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex: 1;
+}
+
+section {
+  margin-bottom: 3em;
+}
+
+bio {
+  display: flex;
+  column-gap: 1em;
+  margin-bottom: 2em;
+}
+
+bio img {
+  height: 7em;
+  width: 7em;
+  border-radius: 50%;
+}
+
+bio div * {
+  margin: 0px;
+}
+
+bio h3 {
+  font-style: italic;
+}
+.centered {
+  max-width: 100em;
+}
+
+.featured-event-container {
+  width: min(90vw, 90em);
+}
+
+.column {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.featured-event {
+  position: relative;
+  color: white;
+  font-weight: bolder;
+  background-size: cover;
+  margin: 0em 2em 0em 0em;
+  height: 30em;
+  width: 25em;
+  border-radius: 1.5em;
+  background-position: center center;
+  background-color: rgba(200, 100, 0, 0.5);
+  transition: background-color 100ms linear;
+  background-blend-mode: multiply;
+  position: relative;
+}
+
+.featured-event:hover {
+  cursor: pointer;
+  background-color: rgba(212, 54, 214, 0.5);
+  -webkit-transition: background-color 100ms linear;
+  -ms-transition: background-color 100ms linear;
+  transition: background-color 100ms linear;
+}
+
+.featured-event h2 {
+  position: absolute;
+  text-align: right;
+  bottom: 0;
+  right: 0;
+  text-shadow: 1px 1px 2px black;
+  margin: 1em;
+}
+
+.browse-button {
+  font-size: 2em;
+  padding: 0.5em;
+  border-radius: 0.75em;
+}
+
+.browse-button:hover {
+  cursor: pointer;
+}
+
+.header {
+  background-color: brown;
+  width: 100vw;
+  height: 5em;
+  display: flex;
+  align-items: center;
+}
+
+.header div {
+  display: flex;
+  column-gap: 1.5em;
+  margin-left: 2em;
+  color: white;
+  font-weight: bolder;
+}
+
+.footer {
+  background-color: brown;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  margin-top: 1.5em;
+  color: white;
+  justify-content: center;
+}
+
+.footer-container {
+  width: min(90vw, 90em);
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  margin-left: 1em;
+  height: 2em;
+  max-width: 90%;
+}
+
+.telegram-logo {
+  height: 2em;
+  width: 2em;
+}
+
+.footer-flag {
+  height: 2.5em;
+}
+
+.debug {
+  background-color: yellow;
+  border-style: solid;
+  border-color: red;
+}
+
+.upcoming-event-container {
+  display: flex;
+  flex-direction: column;
+  column-gap: 1em;
+  row-gap: 1em;
+}
+
+.upcoming-event {
+  background-color: rgb(235, 227, 219);
+  padding: 0.5em;
+  border-radius: 1em;
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  min-width: fit-content;
+}
+
+.upcoming-event * {
+  margin: 0px;
+}
+
+.upcoming-event ev-name {
+  font-size: 1.5em;
+  font-family: AvenirBold;
+}
+
+.upcoming-event ev-date {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.footer-logo {
+  height: 2em;
+}
+
+ev-day {
+  font-size: 1.5em;
+  font-weight: bolder;
+}
+
+@media (max-width: 768px) {
+  section {
+    margin: 1em;
+  }
+
+  bio {
+    flex-direction: column;
+  }
+
+  .header {
+    justify-content: center;
+    display: block;
+    text-align: center;
+    padding-top: 1em;
+  }
+
+  .header .options-bar {
+    max-width: 100vw;
+  }
+
+  .options-bar a {
+    width: fit-content;
+    margin: 0px;
+  }
+
+  .header a {
+    margin: 0px;
+    justify-content: center;
+    flex: 1;
+  }
+
+  .header div {
+    margin: 0px;
+  }
+
+  .header a img {
+    margin: 0px;
+  }
+
+  .column {
+    flex-direction: column;
+  }
+
+  .featured-event-container {
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .featured-event {
+    width: 100%;
+    height: 10em;
+    margin-bottom: 1em;
+  }
+
+  .upcoming-event-container {
+    max-width: 100vw;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .footer-logo {
+    height: 2em;
+    margin-bottom: 1em;
+    max-width: 80%
+  }
+}
