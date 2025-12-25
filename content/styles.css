@@ -1,11 +1,13 @@
 @font-face {
   font-family: "Avenir";
-  src: url("./fonts/AvenirNextLTPro-Regular.otf"); /*URL to font*/
+  src: url("./fonts/AvenirNextLTPro-Regular.otf");
+  /*URL to font*/
 }
 
 @font-face {
   font-family: "AvenirBold";
-  src: url("./fonts/AvenirNextLTPro-Bold.otf"); /*URL to font*/
+  src: url("./fonts/AvenirNextLTPro-Bold.otf");
+  /*URL to font*/
 }
 
 body {
@@ -43,6 +45,26 @@ main {
 
 section {
   margin-bottom: 3em;
+}
+
+bio {
+  display: flex;
+  column-gap: 1em;
+  margin-bottom: 2em;
+}
+
+bio img {
+  height: 7em;
+  width: 7em;
+  border-radius: 50%;
+}
+
+bio div * {
+  margin: 0px;
+}
+
+bio h3 {
+  font-style: italic;
 }
 
 .centered {
@@ -203,6 +225,10 @@ ev-day {
 @media (max-width: 768px) {
   section {
     margin: 1em;
+  }
+
+  bio {
+    flex-direction: column;
   }
 
   .header {
