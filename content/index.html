@@ -1,160 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Shutterpaws | HOME</title>
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.js"
-      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" type="text/css" href="/styles.css" />
-  </head>
-  <body>
-    <main>
-      <div class="header">
-        <a href="/">
-          <img class="logo" src="/media/shutterpaws_logo.svg" />
-        </a>
-        <div>
-          <a
-            href="https://www.furtrack.com/index/shutterpaws"
-            style="text-decoration: none; color: white"
-            >GALLERY</a
-          >
-          <a
-            href="https://telegram.shutterpaws.pics"
-            style="text-decoration: none; color: white"
-            >TELEGRAM</a
-          >
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Shutterpaws | HOME</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="/styles.css" />
+</head>
+
+<body>
+  <main>
+    <div class="header">
+      <a href="/">
+        <img class="logo" src="/media/shutterpaws_logo.svg" />
+      </a>
+      <div>
+        <a href="https://www.furtrack.com/index/shutterpaws" style="text-decoration: none; color: white">GALLERY</a>
+        <a href="https://telegram.shutterpaws.pics" style="text-decoration: none; color: white">TELEGRAM</a>
+      </div>
+    </div>
+    <!-- Container for Featured Events segment -->
+    <div class="centered featured-event-container">
+      <section>
+        <h1>Featured Events</h1>
+        <div class="column">
+          <a href="https://photo.felle.me/Furries/Socials/Shutterpaws/2025/Montpelier-Farms" class="featured-event"
+            style="background-image: url('/media/mp_banner.jpg')">
+            <h2>Montpellier Farms</h2>
+          </a>
+          <a href="https://photo.felle.me/Furries/Socials/Shutterpaws/2025/Great-Falls-Park" class="featured-event"
+            style="background-image: url('/media/gf_banner.jpg')">
+            <h2>Great Falls National Park</h2>
+          </a>
+          <a href="https://photo.felle.me/Furries/Socials/Shutterpaws/2025/North-Point-State-Park"
+            class="featured-event" style="background-image: url('/media/bm_banner.jpg')">
+            <h2>North Point State Park</h2>
+          </a>
         </div>
-      </div>
-      <!-- Container for Featured Events segment -->
-      <div class="centered featured-event-container">
-        <section>
-          <h1>Featured Events</h1>
-          <div class="column">
-            <a
-              href="https://photo.felle.me/Furries/Socials/Shutterpaws/2025/Montpelier-Farms"
-              class="featured-event"
-              style="background-image: url('/media/mp_banner.jpg')"
-            >
-              <h2>Montpellier Farms</h2>
-            </a>
-            <a
-              href="https://photo.felle.me/Furries/Socials/Shutterpaws/2025/Great-Falls-Park"
-              class="featured-event"
-              style="background-image: url('/media/gf_banner.jpg')"
-            >
-              <h2>Great Falls National Park</h2>
-            </a>
-            <a
-              href="https://photo.felle.me/Furries/Socials/Shutterpaws/2025/North-Point-State-Park"
-              class="featured-event"
-              style="background-image: url('/media/bm_banner.jpg')"
-            >
-              <h2>North Point State Park</h2>
-            </a>
-          </div>
-        </section>
+      </section>
 
-        <section>
-          <h1>Upcoming Events</h1>
-          <div class="upcoming-event-container">
-            <div class="upcoming-event">
-              <div>
-                <ev-name>Flash Photography for Fursuiters</ev-name>
-                <p>1325 Annapolis Rd. Odenton, MD</p>
-              </div>
-              <ev-date>
-                <ev-month>Jan</ev-month>
-                <ev-day>11</ev-day>
-              </ev-date>
+      <section>
+        <h1>Upcoming Events</h1>
+        <div class="upcoming-event-container">
+          <div class="upcoming-event">
+            <div>
+              <ev-name>Flash Photography for Fursuiters</ev-name>
+              <p>1325 Annapolis Rd. Odenton, MD</p>
             </div>
-
-            <div class="upcoming-event">
-              <div>
-                <ev-name>Baltimore FurRide</ev-name>
-                <p>7378 Baltimore Annapolis Blvd. Baltimore, MD</p>
-              </div>
-              <ev-date>
-                <ev-month>Jan</ev-month>
-                <ev-day>24</ev-day>
-              </ev-date>
-            </div>
-
-            <div class="upcoming-event">
-              <div>
-                <ev-name>Monster Mini Golf</ev-name>
-                <p>7351 Assateague Dr. Jessup, MD</p>
-              </div>
-              <ev-date>
-                <ev-month>Feb</ev-month>
-                <ev-day>7</ev-day>
-              </ev-date>
-            </div>
+            <ev-date>
+              <ev-month>Jan</ev-month>
+              <ev-day>11</ev-day>
+            </ev-date>
           </div>
-        </section>
 
-        <section>
-          <h1>Who are we?</h1>
-          <p>
-            Shutterpaws is the premier organization dedicated to connecting
-            fursuiters and photographers across the greater Washington D.C. and
-            Baltimore region. Our core mission is to host high-quality, themed
-            photoshoots and engaging furry events, providing fantastic
-            opportunities for fursuiters to showcase their characters and for
-            photographers to build their portfolios. We strive to meet
-            approximately once a month, fostering a fun, creative, and
-            supportive community for fursuiters to gather, socialize, and
-            capture stunning visual memories of their passion. We have
-            successfully collaborated with many community partners in the region
-            to enhance the variety and scale of our unique events.
-          </p>
-        </section>
-
-        <section>
-          <h1>How can I join</h1>
-          <p>
-            Events are organized and announced primarily within the Shutterpaws
-            telegram channel!
-          </p>
-
-          <div class="centered">
-            <button class="browse-button" id="browse-button">
-              <img class="telegram-logo" src="/media/Telegram_logo.svg" />
-              Join our Telegram!
-            </button>
+          <div class="upcoming-event">
+            <div>
+              <ev-name>Baltimore FurRide</ev-name>
+              <p>7378 Baltimore Annapolis Blvd. Baltimore, MD</p>
+            </div>
+            <ev-date>
+              <ev-month>Jan</ev-month>
+              <ev-day>24</ev-day>
+            </ev-date>
           </div>
-        </section>
-      </div>
-    </main>
 
-    <footer class="footer">
-      <div class="footer-container">
+          <div class="upcoming-event">
+            <div>
+              <ev-name>Monster Mini Golf</ev-name>
+              <p>7351 Assateague Dr. Jessup, MD</p>
+            </div>
+            <ev-date>
+              <ev-month>Feb</ev-month>
+              <ev-day>7</ev-day>
+            </ev-date>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h1>Who are we?</h1>
         <p>
-          ©Shutterpaws 2025 <br />
-          All Rights Reserved <br />
-          <a style="color: white" href="mailto:events@shutterpaws.com"
-            >events@shutterpaws.com</a
-          >
+          Shutterpaws is the premier organization dedicated to connecting
+          fursuiters and photographers across the greater Washington D.C. and
+          Baltimore region. Our core mission is to host high-quality, themed
+          photoshoots and engaging furry events, providing fantastic
+          opportunities for fursuiters to showcase their characters and for
+          photographers to build their portfolios. We strive to meet
+          approximately once a month, fostering a fun, creative, and
+          supportive community for fursuiters to gather, socialize, and
+          capture stunning visual memories of their passion. We have
+          successfully collaborated with many community partners in the region
+          to enhance the variety and scale of our unique events.
         </p>
-        <div style="display: flex; align-items: center; column-gap: 0.5em">
-          <img class="footer-flag" src="/media/footer/pride.svg" />
-          <img class="footer-flag" src="/media/footer/md.svg" />
-          <img class="footer-flag" src="/media/footer/dc.svg" />
-          <img class="footer-flag" src="/media/footer/va.svg" />
+      </section>
+
+      <section>
+        <h1>How can I join</h1>
+        <p>
+          Events are organized and announced primarily within the Shutterpaws
+          telegram channel!
+        </p>
+
+        <div class="centered">
+          <button class="browse-button" id="browse-button">
+            <img class="telegram-logo" src="/media/Telegram_logo.svg" />
+            Join our Telegram!
+          </button>
         </div>
-        <div class="footer-logo-container">
-          <img class="footer-logo" src="/media/shutterpaws_logo.svg" />
-        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <p>
+        ©Shutterpaws 2025 <br />
+        All Rights Reserved <br />
+        <a style="color: white" href="mailto:events@shutterpaws.com">events@shutterpaws.com</a>
+      </p>
+      <div style="display: flex; align-items: center; column-gap: 0.5em">
+        <img class="footer-flag" src="/media/footer/pride.svg" />
+        <img class="footer-flag" src="/media/footer/md.svg" />
+        <img class="footer-flag" src="/media/footer/dc.svg" />
+        <img class="footer-flag" src="/media/footer/va.svg" />
       </div>
-    </footer>
-  </body>
-  <script>
-    $("#browse-button").on("click", () => {
-      window.location = "https://telegram.shutterpaws.pics";
-    });
-  </script>
+      <div class="footer-logo-container">
+        <img class="footer-logo" src="/media/shutterpaws_logo.svg" />
+      </div>
+    </div>
+  </footer>
+</body>
+<script>
+  $("#browse-button").on("click", () => {
+    window.location = "https://telegram.shutterpaws.pics";
+  });
+</script>
+
 </html>
